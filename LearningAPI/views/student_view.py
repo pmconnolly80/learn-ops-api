@@ -89,7 +89,7 @@ class StudentViewSet(ModelViewSet):
                 if "github_handle" in request.data:
                     student.github_handle = request.data["github_handle"]
 
-                student.save()
+            
                 return Response(None, status=status.HTTP_204_NO_CONTENT)
             else:
                 return Response(None, status=status.HTTP_401_UNAUTHORIZED)
