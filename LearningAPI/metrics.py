@@ -1,4 +1,5 @@
 from prometheus_client import Counter, Histogram, Gauge
+# No django.shortcuts imports required for metrics definitions
 
 # Example Counter: Tracks the total number of API requests
 api_requests_total = Counter(
